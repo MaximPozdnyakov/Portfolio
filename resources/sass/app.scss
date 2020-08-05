@@ -13,8 +13,22 @@ body,
     height: 100%;
 }
 
-.section-height {
-    height: calc(100vh - 62px);
+::placeholder {
+    color: #fff !important;
+    font-weight: 500 !important;
+    opacity: 0.7 !important;
+}
+
+:-ms-input-placeholder {
+    color: #fff !important;
+    font-weight: 500 !important;
+    opacity: 0.7 !important;
+}
+
+::-ms-input-placeholder {
+    color: #fff !important;
+    font-weight: 500 !important;
+    opacity: 0.7 !important;
 }
 
 .nav-logo {
@@ -29,14 +43,6 @@ body,
     }
 }
 
-.home-top {
-    top: 20vh;
-}
-
-.home-left {
-    left: 10vh;
-}
-
 .overflow-x {
     overflow-x: hidden;
 }
@@ -45,7 +51,381 @@ body,
     font-weight: 500;
 }
 
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
 .big-btn {
     padding: 0.5em 2em !important;
     font-size: 24px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.br-20 {
+    border-radius: 20px;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+.br-4 {
+    border-radius: 4px;
+}
+
+.visit-btn-p {
+    padding: 3px 25px;
+}
+
+.text-black {
+    color: #000;
+}
+
+.contact-btn {
+    flex-shrink: 0;
+    padding: 5px 20px;
+    width: 30%;
+}
+
+.lh-160 {
+    line-height: 160%;
+}
+
+.p-64 {
+    padding: 64px;
+}
+
+.lh-75 {
+    line-height: 75%;
+}
+.lh-1 {
+    line-height: 1em;
+}
+
+.github-btn {
+    color: #000;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.h-88 {
+    height: 88px;
+}
+
+.w-85 {
+    width: 85% !important;
+}
+
+.bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    right: 24px;
+    top: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #fff;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #fff;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 36px !important;
+    width: 36px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+    top: 60px;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #6368cf;
+    padding: 2.5em 1.5em 0;
+    font-size: 2em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #fff;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+.bm-item:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+/* Styling of overlay */
+.bm-overlay {
+    z-index: 1000;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mt-big {
+    margin-top: 100px;
+}
+
+@media (max-width: 576px) {
+    .home-top {
+        top: 150px;
+    }
+    .home-title {
+        text-align: center;
+        font-size: 1.8rem !important;
+        font-weight: 800;
+    }
+    .home-subtitle {
+        text-align: center;
+        font-size: 1.4rem !important;
+    }
+    .home-img {
+        max-width: 100% !important;
+        max-height: 386px;
+    }
+    .btn-home-size {
+        font-size: 20px;
+    }
+    .section-height {
+        height: 737px;
+    }
+
+    .about-title {
+        font-size: 22px !important;
+    }
+    .about-text {
+        font-size: 18px !important;
+    }
+    .btn-about {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .btn-home-size {
+        padding: 0.5em 2em !important;
+        font-size: 18px;
+    }
+    .home-img {
+        max-width: 75% !important;
+        max-height: 350px;
+    }
+    .home-top {
+        top: 150px;
+    }
+    .home-title {
+        text-align: center;
+        font-size: 2.5rem !important;
+    }
+    .home-subtitle {
+        text-align: center;
+        font-size: 1.55rem !important;
+    }
+    .section-height {
+        height: 737px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+    .about-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bm-burger-button {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .btn-home-size {
+        padding: 0.5em 2em !important;
+        font-size: 22px;
+    }
+    .home-img {
+        max-width: 75% !important;
+        max-height: 576px;
+    }
+    .home-top {
+        top: 150px;
+    }
+    .home-title {
+        text-align: center;
+        font-size: 3rem !important;
+    }
+    .home-subtitle {
+        text-align: center;
+        font-size: 1.8rem !important;
+    }
+    .section-height {
+        height: 1024px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+    .about-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .btn-home-size {
+        padding: 0.25em 1em !important;
+        font-size: 18px;
+    }
+    .home-top {
+        top: 190px;
+    }
+    .home-left {
+        left: 40px;
+    }
+    .home-title {
+        font-size: 3rem !important;
+    }
+    .home-subtitle {
+        font-size: 1.8rem !important;
+        font-weight: 400;
+    }
+    .home-img {
+        width: 100% !important;
+    }
+    .section-height {
+        height: 768px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+    .about-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .skills-separator {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-title {
+        font-size: 4.5rem !important;
+    }
+    .home-subtitle {
+        font-size: 2.5rem !important;
+        font-weight: 400;
+    }
+    .home-top {
+        top: 240px;
+    }
+    .home-left {
+        left: 100px;
+    }
+    .btn-home-size {
+        padding: 0.5em 2em !important;
+        font-size: 24px;
+    }
+    .home-img {
+        width: 100% !important;
+    }
+    .section-height {
+        height: 940px;
+    }
+
+    .about-img {
+        width: 360px !important;
+        height: auto;
+    }
+    .about-title {
+        font-size: 28px;
+    }
+    .about-text {
+        font-size: 20px;
+    }
+
+    .skills-separator {
+        border-right: 1px solid #fff;
+    }
+}
+
+@media (min-width: 1400px) {
+    .about-img {
+        width: 460px !important;
+    }
+}
+
+@media (max-width: 1399px) {
+    .contact-img {
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 1600px) {
+    .contact-img {
+        width: 500px !important;
+    }
 }
